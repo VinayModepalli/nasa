@@ -9,8 +9,7 @@ class App extends Component {
     return (
       <div>
         <div className="container">
-          <BrowserRouter basename={process.env.PUBLIC_URL}>
-          
+          <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
           <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />

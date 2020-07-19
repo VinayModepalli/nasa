@@ -6,3 +6,5 @@ const accEmail = 'hackerman@gmail.com'
 const accID = '0a4d448b-0ae4-4959-8d18-d83de6f4cb53'
 
 export default API;
+
+//basename={process.env.PUBLIC_URL}
