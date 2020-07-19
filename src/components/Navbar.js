@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark">
-            <Link to="/nasa" className="navbar-brand pl-5">
+            <Link to="/" className="navbar-brand pl-5">
                 <img src="nasa.png" width="50" height="50" alt="" loading="lazy" />
             </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-control="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
