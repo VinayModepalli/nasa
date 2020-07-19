@@ -12,9 +12,9 @@ class App extends Component {
           <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
           <Navbar />
             <Switch>
-              <Route exact path="" component={Home} />
-              <Route path = "/apod" component={Apod} />
-              <Route path = "/neows" component={Neows} />
+              <Route exact path="/nasa" component={Home} />
+              <Route path = "/nasa/apod" component={Apod} />
+              <Route path = "/nasa/neows" component={Neows} />
             </Switch>
           </BrowserRouter>
         </div>
