@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <div className="container">
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
