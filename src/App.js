@@ -4,13 +4,17 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home'
 import Apod from './components/Apod';
 import Neows from './components/Neows';
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory();
+
 class App extends Component {
   render () {
     return (
       <div>
         <div className="container">
-          <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
-            {console.log('PUBLIC_URL: ',`${process.env.PUBLIC_URL}/`)}
+          <BrowserRouter history={history}>
+            
           <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
