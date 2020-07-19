@@ -10,7 +10,7 @@ class App extends Component {
       <div>
         <div className="container">
           <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
-            {console.log(`${process.env.PUBLIC_URL}/`)}
+            {console.log('PUBLIC_URL: ',`${process.env.PUBLIC_URL}/`)}
           <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
