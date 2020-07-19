@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <div className="container">
-        <BrowserRouter basename="nasa">
+        <BrowserRouter basename="/nasa">
         <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
